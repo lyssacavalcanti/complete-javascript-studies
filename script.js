@@ -52,3 +52,13 @@ console.log(imcJohn);
 
 const markHigherIMC = imcMark > imcJohn;
 console.log(markHigherIMC);
+
+// Coding Challenge #2
+
+let compareIMC;
+if (imcJohn > imcMark) {
+    compareIMC = `Jonh's IMC (${imcJohn}) is greater than Mark's IMC (${imcMark}).`; 
+} else {
+    compareIMC = `Mark's IMC (${imcMark}) is greater than Jonh's IMC (${imcJohn}).`;
+}
+console.log(compareIMC);
