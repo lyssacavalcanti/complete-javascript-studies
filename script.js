@@ -75,3 +75,31 @@ if (scoreDolphins > scoreKoalas) {
 } else if (scoreDolphins === scoreKoalas) {
     console.log ("It's a draw")
 }
+
+// Switch Statement
+const day = 'friday';
+
+switch (day) {
+    case 'monday':
+        console.log ('Play soccer');
+        break;
+    case 'tuesday':
+        console.log ('Write code examples');
+        break;
+    case 'wednesday':
+        console.log ('Record videos');
+        break;
+    case 'thursday':
+        console.log ('Go to coding meetup');
+        break;
+    case 'friday': 
+        console.log ('Plan next week');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log ('Not a valid day');
+}
+
