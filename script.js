@@ -103,4 +103,11 @@ switch (day) {
         console.log ('Not a valid day');
 }
 
-fenix hotel moema
+// Strings and Template Literals
+const firstName = 'Jonas';
+const job = 'teacher';
+const birthYear = 1990;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(jonas);
