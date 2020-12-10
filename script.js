@@ -103,3 +103,4 @@ switch (day) {
         console.log ('Not a valid day');
 }
 
+fenix hotel moema
