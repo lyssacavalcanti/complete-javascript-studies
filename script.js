@@ -36,6 +36,14 @@ console.log(population > 330000000);
 let description = `${country} is in ${continent}, and it's ${population} people speak ${language}.`
 console.log(description);
 
+// Taking Decisions: if / else Statement
+if (population > 33000000) {
+        console.log ("Brazil's population is above average.")
+    } else {
+        console.log ("Brasil's population is below average.")
+    }
+
+
 // Coding  Challenge #1
 
 const massMark = 78;
@@ -111,3 +119,5 @@ const year = 2037;
 
 const jonas = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
 console.log(jonas);
+
+
