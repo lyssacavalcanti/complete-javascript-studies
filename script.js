@@ -20,7 +20,6 @@ console.log(typeof population);
 console.log(typeof language);
 
 // Let, Const and Var
-
 language = 'Portuguese';
 console.log(language);
 isIsland = true;
@@ -33,6 +32,8 @@ let finlandiaPopulation = 6000000;
 console.log(population < finlandiaPopulation);
 console.log(population > 330000000);
 
+
+// Strings and Template Literals
 let description = `${country} is in ${continent}, and it's ${population} people speak ${language}.`
 console.log(description);
 
@@ -84,33 +85,6 @@ if (scoreDolphins > scoreKoalas) {
     console.log ("It's a draw")
 }
 
-// Switch Statement
-const day = 'friday';
-
-switch (day) {
-    case 'monday':
-        console.log ('Play soccer');
-        break;
-    case 'tuesday':
-        console.log ('Write code examples');
-        break;
-    case 'wednesday':
-        console.log ('Record videos');
-        break;
-    case 'thursday':
-        console.log ('Go to coding meetup');
-        break;
-    case 'friday': 
-        console.log ('Plan next week');
-        break;
-    case 'saturday':
-    case 'sunday':
-        console.log('Enjoy the weekend');
-        break;
-    default:
-        console.log ('Not a valid day');
-}
-
 // Strings and Template Literals
 const firstName = 'Jonas';
 const job = 'teacher';
@@ -146,3 +120,31 @@ if (language === 'english' && population < 50000000 && !isIsland) {
 } else {
     console.log ('Brazil does not meet your criteria =(')
 }
+
+// Switch Statement
+const day = 'friday';
+
+switch (day) {
+    case 'monday':
+        console.log ('Play soccer');
+        break;
+    case 'tuesday':
+        console.log ('Write code examples');
+        break;
+    case 'wednesday':
+        console.log ('Record videos');
+        break;
+    case 'thursday':
+        console.log ('Go to coding meetup');
+        break;
+    case 'friday': 
+        console.log ('Plan next week');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend');
+        break;
+    default:
+        console.log ('Not a valid day');
+}
+
