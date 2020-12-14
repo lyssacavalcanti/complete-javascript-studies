@@ -1,3 +1,5 @@
+'use strict';
+
 // JAVASCRIPT FUNDAMENTALS - Part 1
 
 // // Lecture - Values and Variables
@@ -5,6 +7,7 @@
 // const country = 'Brazil';
 // const continent = 'South America';
 // let population = 209500000;
+// const capitalCity = 'Brasília';
 
 // console.log(country);
 // console.log(continent);
@@ -158,10 +161,28 @@
 // console.log (sizePopulation);
 
 // Coding Challenge #4
-const bill = 430;
-const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
+// const bill = 430;
+// const tip = bill >= 50 && bill <= 300 ? bill * .15 : bill * .20;
 
-console.log (`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}.`)
+// console.log (`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}.`)
 
 // JAVASCRIPT FUNDAMENTALS - Part 2
 
+let hasDriversLicense = true;
+const passTest = true;
+
+if (passTest) hasDriversLicense = true;
+if (hasDriversLicense) console.log ('I can drive :D');
+
+// Functions 
+// Calling / Running / Invoking Function
+
+function describeCountry (country, population, capitalCity) {
+    return `${country} has ${population} milions people and it's capital city is ${capitalCity}.`;
+ }
+
+ const descPortugal = describeCountry ('Portugal', 10, 'Lisbon');
+ const descGermany = describeCountry ('Germany', 83, 'Berlin');
+ const descFinland = describeCountry ('Finland', 6, 'Helsinki');
+
+ console.log (descPortugal, descGermany, descFinland);
