@@ -102,16 +102,17 @@ console.log ('123'< 57);
 console.log (5 + 6 + '4'+ 9 - 4 - 2);
 
 // Equality Operators: == vs. ===
-const numNeighbours = Number (prompt ('How many neighbour countries does your conuntry have?'),
-);
+// const numNeighbours = Number (prompt ('How many neighbour countries does your conuntry have?'),
+// );
 
-if (numNeighbours === 1) {
-    console.log ('Only 1 border.');
-} else if (numNeighbours > 1) {
-    console.log ('More than 1 border.')
-} else {
-    console.log ('No borders.')
-};
+// if (numNeighbours === 1) {
+//     console.log ('Only 1 border.');
+// } else if (numNeighbours > 1) {
+//     console.log ('More than 1 border.')
+// } else {
+//     console.log ('No borders.')
+// };
+// These lines are commented just to prompt don't get in the way of studies.
 
 // Logical Operators
 
@@ -121,7 +122,7 @@ if (language === 'english' && population < 50000000 && !isIsland) {
     console.log ('Brazil does not meet your criteria =(')
 }
 
-// Switch Statement
+// The Switch Statement
 const day = 'friday';
 
 switch (day) {
@@ -148,3 +149,8 @@ switch (day) {
         console.log ('Not a valid day');
 }
 
+// The Conditional (Ternary) Operator
+const sizePopulation = 
+population > 33000000 ? "Brazil's population is above average" : "Brazil's population is above average";
+
+console.log (sizePopulation);
