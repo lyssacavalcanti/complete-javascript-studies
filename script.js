@@ -208,3 +208,14 @@ const percentageOfWorld2 = function (population2) {
  console.log (percentageOfWorld2 (1380)); // Índia;
  console.log (percentageOfWorld2 (331)); // Estados Unidos;
  console.log (percentageOfWorld2 (212)); // Brasil;
+
+
+ // Arrow Functions
+
+ const percentageOfWorld3 = population3 => (population3 / 7800) * 100;
+ const percChina = percentageOfWorld3 (1439);
+ const percIndia = percentageOfWorld3 (1380);
+ const percEstadosUnidos = percentageOfWorld3 (331);
+ const percBrasil = percentageOfWorld3 (212);
+
+ console.log(percChina, percIndia, percEstadosUnidos, percBrasil);
