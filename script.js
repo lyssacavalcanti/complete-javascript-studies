@@ -186,3 +186,25 @@ function describeCountry (country, population, capitalCity) {
  const descFinland = describeCountry ('Finland', 6, 'Helsinki');
 
  console.log (descPortugal, descGermany, descFinland);
+
+ // Functions Declaration vs. Expressions
+
+    // Function Declaration
+ function percentageOfWorld1 (population1) {
+     return ((population1 / 7800) * 100)
+ }
+ console.log (percentageOfWorld1 (1439)); // China;
+ console.log (percentageOfWorld1 (1380)); // Índia;
+ console.log (percentageOfWorld1 (331)); // Estados Unidos;
+ console.log (percentageOfWorld1 (212)); // Brasil;
+
+    // Function Expression
+
+const percentageOfWorld2 = function (population2) {
+    return ((population2 / 7800) * 100)
+ }
+
+ console.log (percentageOfWorld2 (1439)); // China;
+ console.log (percentageOfWorld2 (1380)); // Índia;
+ console.log (percentageOfWorld2 (331)); // Estados Unidos;
+ console.log (percentageOfWorld2 (212)); // Brasil;
