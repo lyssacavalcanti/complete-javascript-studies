@@ -219,3 +219,18 @@ const percentageOfWorld2 = function (population2) {
  const percBrasil = percentageOfWorld3 (212);
 
  console.log(percChina, percIndia, percEstadosUnidos, percBrasil);
+
+ const sum = (...args) => args.reduce((a, b) => a + b, 0);
+ console.log(sum(2,3,7));
+
+ // Functions Calling Other Functions
+
+const describePopulation = function (country4, population4) {
+    const percentage = percentageOfWorld1 (population4);
+    const description = `${country4} has ${population4} million people, wich is about ${percentage}% of the world.`;
+    console.log(description);
+};
+
+describePopulation ('Portugal', 10);
+describePopulation ('China', 1441);
+describePopulation ('USA', 332);
