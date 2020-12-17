@@ -234,7 +234,7 @@ describePopulation ('Portugal', 10);
 describePopulation ('China', 1441);
 describePopulation ('USA', 332);
 
-// Challenge #1 
+// Challenge #5
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
@@ -249,6 +249,19 @@ const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
     } else {
         console.log (`No team wins.`);
     }
-}
+};
 
 checkWinner (scoreDolphins, scoreKoalas);
+
+// Introduction to Arrays
+
+const populationChina = 1439;
+const populationIndia = 1380;
+const populationEUA = 331;
+const populationBrasil = 212;
+
+const populations = [populationChina, populationIndia, populationEUA, populationBrasil];
+console.log (populations);
+
+const percentages = [percChina, percIndia, percEstadosUnidos, percBrasil];
+console.log (percentages);
