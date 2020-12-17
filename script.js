@@ -166,6 +166,8 @@
 
 // console.log (`The bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}.`)
 
+
+// ______________________________________________________________
 // JAVASCRIPT FUNDAMENTALS - Part 2
 
 let hasDriversLicense = true;
@@ -220,10 +222,7 @@ const percentageOfWorld2 = function (population2) {
 
  console.log(percChina, percIndia, percEstadosUnidos, percBrasil);
 
- const sum = (...args) => args.reduce((a, b) => a + b, 0);
- console.log(sum(2,3,7));
-
- // Functions Calling Other Functions
+ // Functions Calling Others Functions
 
 const describePopulation = function (country4, population4) {
     const percentage = percentageOfWorld1 (population4);
@@ -234,3 +233,22 @@ const describePopulation = function (country4, population4) {
 describePopulation ('Portugal', 10);
 describePopulation ('China', 1441);
 describePopulation ('USA', 332);
+
+// Challenge #1 
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+    const scoreDolphins = calcAverage (44, 23, 71);
+    const scoreKoalas = calcAverage (85, 54, 41);
+
+    const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log (`Dolphins wins ${avgDolphins} vs. ${avgKoalas}.`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log (`Koalas wins ${avgKoalas} vs. ${avgDolphins}.`);
+    } else {
+        console.log (`No team wins.`);
+    }
+}
+
+checkWinner (scoreDolphins, scoreKoalas);
