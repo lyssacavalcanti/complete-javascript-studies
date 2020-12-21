@@ -256,7 +256,7 @@ checkWinner (scoreDolphins, scoreKoalas);
 // Introduction to Arrays
 
 const populationChina = 1439;
-const populationIndia = 1380;
+const populationIndia = 1380; 
 const populationEUA = 331;
 const populationBrasil = 212;
 
@@ -265,3 +265,31 @@ console.log (populations);
 
 const percentages = [percChina, percIndia, percEstadosUnidos, percBrasil];
 console.log (percentages);
+
+// indexOf - search the index of an element on array.
+const pos = percentages.indexOf(percChina);
+console.log(pos);
+
+//  
+percentages.splice(pos,1);
+console.log (percentages);
+
+// Basic Array Operations
+
+const neighbours = ['Argentina', 'Bolívia', 'Colômbia', 'Guiana', 'Guiana Francesa', 'Paraguai', 'Peru', 'Suriname', 'Uruguai', 'Venezuela']; // Create array
+console.log(neighbours);
+
+neighbours.push('Utopia'); // Add the fictitious new country in the array
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes('Germany')){
+    console.log('Probably not a central European country.')
+} else {
+    console.log('Probably is a central European country.')
+}
+
+neighbours[neighbours.indexOf('Colômbia')] = 'Republic of Colombia';
+console.log(neighbours);
