@@ -4,9 +4,13 @@
 
 // // Lecture - Values and Variables
 
-// const country = 'Brazil';
-// const continent = 'South America';
-// let population = 209500000;
+// Exemplos de var, const e let 
+
+    // var country = 'Brazil';
+    // const continent = 'South America';
+    // let population = 209500000;
+
+
 // const capitalCity = 'Brasília';
 
 // console.log(country);
@@ -110,13 +114,14 @@
 // // const numNeighbours = Number (prompt ('How many neighbour countries does your conuntry have?'),
 // // );
 
-// // if (numNeighbours === 1) {
-// //     console.log ('Only 1 border.');
-// // } else if (numNeighbours > 1) {
-// //     console.log ('More than 1 border.')
-// // } else {
-// //     console.log ('No borders.')
-// // };
+// if (numNeighbours === 1) {
+//     console.log ('Only 1 border.');
+// } else if (numNeighbours > 1) {
+//     console.log ('More than 1 border.')
+// } else {
+//     console.log ('No borders.')
+// };
+
 // // These lines are commented just to prompt don't get in the way of studies.
 
 // // Logical Operators
@@ -293,3 +298,15 @@ if (!neighbours.includes('Germany')){
 
 neighbours[neighbours.indexOf('Colômbia')] = 'Republic of Colombia';
 console.log(neighbours);
+
+// Introducing to Objects
+
+const myCountry = {
+    country: 'Israel',
+    capital: 'Telaviv',
+    language:'Hebraico',
+    population: 8655535,
+    neighborhood: ['Líbano', 'Síria', 'Jordânia', 'Cisjordânia', 'Egito']
+};
+
+console.log (myCountry);
