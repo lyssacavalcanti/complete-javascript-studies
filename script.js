@@ -348,3 +348,9 @@ const myCountry2 = {
 myCountry2.describe();
 myCountry2.checkIsland();
 console.log(myCountry2);
+
+// Iteration: The For Loop
+
+for (let voter = 1; voter <= 50; voter++) {
+    console.log (`Voter number ${voter} is currently voting`)
+};
