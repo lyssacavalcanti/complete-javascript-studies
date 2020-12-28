@@ -310,3 +310,12 @@ const myCountry = {
 };
 
 console.log (myCountry);
+
+// Dot vs. Bracket Notation
+console.log(`${myCountry.country} has ${myCountry.population} hebraic-speaking people, ${myCountry.neighborhood.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+myCountry.population += 2000000;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2000000;
+console.log(myCountry.population);
