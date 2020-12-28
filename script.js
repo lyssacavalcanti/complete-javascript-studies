@@ -306,12 +306,18 @@ const myCountry = {
     capital: 'Telaviv',
     language:'Hebraico',
     population: 8655535,
-    neighborhood: ['Líbano', 'Síria', 'Jordânia', 'Cisjordânia', 'Egito']
+    neighborhood: ['Líbano', 'Síria', 'Jordânia', 'Cisjordânia', 'Egito'],
+    describe: function () {
+        console.log (
+            `${this.country} has ${this.population} hebraic-speaking people, ${this.neighborhood.length} 
+            neighbouring countries and a capital called ${this.capital}.`
+        )
+    }
 };
 
 console.log (myCountry);
 
-// Dot vs. Bracket Notation
+// // Dot vs. Bracket Notation
 console.log(`${myCountry.country} has ${myCountry.population} hebraic-speaking people, ${myCountry.neighborhood.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 
 myCountry.population += 2000000;
@@ -319,3 +325,26 @@ console.log(myCountry.population);
 
 myCountry['population'] -= 2000000;
 console.log(myCountry.population);
+
+// Object Methods
+
+const myCountry2 = {
+    country: 'Israel',
+    capital: 'Telaviv',
+    language:'Hebraico',
+    population: 8655535,
+    neighborhood: ['Líbano', 'Síria', 'Jordânia', 'Cisjordânia', 'Egito'],
+    describe: function () {
+        console.log (
+            `${this.country} has ${this.population} hebraic-speaking people, ${this.neighborhood.length} 
+            neighbouring countries and a capital called ${this.capital}.`
+        );
+    },
+    checkIsland: function () {
+        this.isIsland = this.neighborhood.length === 0 ? true : false;
+    }
+};
+
+myCountry2.describe();
+myCountry2.checkIsland();
+console.log(myCountry2);
