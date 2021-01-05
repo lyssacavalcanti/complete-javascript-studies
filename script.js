@@ -185,7 +185,8 @@ if (hasDriversLicense) console.log ('I can drive :D');
 // Calling / Running / Invoking Function
 
 function describeCountry (country, population, capitalCity) {
-    return `${country} has ${population} milions people and it's capital city is ${capitalCity}.`;
+    return `${country} has ${population} milions people 
+    and it's capital city is ${capitalCity}.`;
  }
 
  const descPortugal = describeCountry ('Portugal', 10, 'Lisbon');
@@ -366,3 +367,10 @@ const perc = percentageOfWorld1(populations2[i]);
 }
 console.log(percentages2);
 
+// Looping Backwards and Loops in Loops
+
+var listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for (let i = 0; i < listOfNeighbours.length; i++) 
+ for (let y = 0; y < listOfNeighbours[i].length; y++)
+console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
