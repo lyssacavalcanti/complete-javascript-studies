@@ -329,59 +329,75 @@
 
 // Object Methods
 
-const myCountry2 = {
-    country: 'Israel',
-    capital: 'Telaviv',
-    language:'Hebraico',
-    population: 8655535,
-    neighborhood: ['Líbano', 'Síria', 'Jordânia', 'Cisjordânia', 'Egito'],
-    describe: function () {
-        console.log (
-            `${this.country} has ${this.population} hebraic-speaking people, ${this.neighborhood.length} 
-            neighbouring countries and a capital called ${this.capital}.`
-        );
-    },
-    checkIsland: function () {
-        this.isIsland = this.neighborhood.length === 0 ? true : false;
-    }
-};
+// const myCountry2 = {
+//     country: 'Israel',
+//     capital: 'Telaviv',
+//     language:'Hebraico',
+//     population: 8655535,
+//     neighborhood: ['Líbano', 'Síria', 'Jordânia', 'Cisjordânia', 'Egito'],
+//     describe: function () {
+//         console.log (
+//             `${this.country} has ${this.population} hebraic-speaking people, ${this.neighborhood.length} 
+//             neighbouring countries and a capital called ${this.capital}.`
+//         );
+//     },
+//     checkIsland: function () {
+//         this.isIsland = this.neighborhood.length === 0 ? true : false;
+//     }
+// };
 
-myCountry2.describe();
-myCountry2.checkIsland();
-console.log(myCountry2);
+// myCountry2.describe();
+// myCountry2.checkIsland();
+// console.log(myCountry2);
 
-// Iteration: The For Loop
+// // Iteration: The For Loop
 
-for (let voter = 1; voter <= 50; voter++) {
-    console.log (`Voter number ${voter} is currently voting`)
-};
+// for (let voter = 1; voter <= 50; voter++) {
+//     console.log (`Voter number ${voter} is currently voting`)
+// };
 
-// Looping Arrays, Breaking and Continuing
+// // Looping Arrays, Breaking and Continuing
 
-const populations2 = [1439, 1340, 331, 212]; 
-const percentages2 = [];
+// const populations2 = [1439, 1340, 331, 212]; 
+// const percentages2 = [];
 
-// for (let i = 0; i < populations2.length; i++) {
+// // for (let i = 0; i < populations2.length; i++) {
+// // const perc = percentageOfWorld1(populations2[i]);
+// //   percentages2.push(perc);
+// // }
+// // console.log(percentages2);
+
+// // Looping Backwards and Loops in Loops
+
+// var listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+// for (let i = 0; i < listOfNeighbours.length; i++) 
+//  for (let y = 0; y < listOfNeighbours[i].length; y++)
+// console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+// // The While Loop
+
+// const percentages3 = [];
+// let i = 0;
+
+// while (i < populations2.length) {
 // const perc = percentageOfWorld1(populations2[i]);
-//   percentages2.push(perc);
-// }
-// console.log(percentages2);
+//   percentages3.push(perc)
+// };
+// console.log(percentages3);
 
-// Looping Backwards and Loops in Loops
+// Coding Challenge #4
 
-var listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100,86, 52];
+const tips = [];
+const totals = [];
 
-for (let i = 0; i < listOfNeighbours.length; i++) 
- for (let y = 0; y < listOfNeighbours[i].length; y++)
-console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * .15 : bill * .20};
 
-// The While Loop
-
-const percentages3 = [];
-let i = 0;
-
-while (i < populations2.length) {
-const perc = percentageOfWorld1(populations2[i]);
-  percentages3.push(perc)
+for (let i = 0; i < bills.length; i++) {const tipResult = calcTip(bills[i])
+tips.push(tipResult);
+totals.push(tipResult + bills[i]);
 };
-console.log(percentages3);
+
+console.log(bills, tips, totals);
