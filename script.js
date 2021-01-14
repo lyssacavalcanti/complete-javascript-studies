@@ -411,3 +411,20 @@ const caclAverage = function (arr) {
 }
 
 console.log(caclAverage(totals));
+
+/*Coding Challenge #5
+Given an array of forecasted maximum temperatures, the thermometer dsplays a string with these temperatures.
+Create a function 'printForecast'wich takes in an array 'arr'and logs a string like the above to the console.
+Use the problem-solving framework: undestand the problem and break it up into sub-problems.
+*/
+const data1 = [ 17, 21, 23];
+
+function printForecast (arr) {
+let str = '';
+for (let i = 0; i < arr.length; i++) {
+    str += `${arr[i]} in ${i + 1} days...`;
+    }
+console.log('...'+ str);
+};
+
+printForecast(data1);
