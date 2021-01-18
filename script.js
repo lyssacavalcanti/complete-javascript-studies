@@ -428,3 +428,22 @@ console.log('...'+ str);
 };
 
 printForecast(data1);
+
+
+
+/* Javascript Banana Joke
+
+Let's understand why this code prints the word 'banana', without the alert having any letter n.
+
+It turns out that 'a' becomes NaN (Not A Number) because it forces a string into a number, 
+while the character a can't be analyzed as a number.
+
+Adding NaN to "ba" turns NaN into the string "NaN" due to the type conversion, so we have baNaN. 
+As we have a letter a then it turns into baNaNa.
+
+The space between + + serves to make the first string concatenation and the second an addition operator (that is, positive).
+
+Mystery Unraveled! It is worth remembering that this puzzle can only be done in Javascript.
+*/
+
+alert(('b' + 'a' + + 'a' + 'a').toLowerCase());
