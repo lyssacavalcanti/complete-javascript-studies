@@ -447,3 +447,31 @@ Mystery Unraveled! It is worth remembering that this puzzle can only be done in 
 */
 
 alert(('b' + 'a' + + 'a' + 'a').toLowerCase());
+
+
+/* Converting an Object in an Array
+We have at least three ways to extract an object to an array, depending on the needs of the project:
+
+⚡1. Object.keys ()
+⚡2. Object.values ()
+⚡3. Object.entries ()
+*/
+
+// At first, let's create an object
+let user = {
+    name: 'Vector',
+    type: 'Robot',
+    age: '6 months'
+}
+
+// 1. The method Object.keys() convert the property's keys of the user objecr to an array.
+let keys = Object.keys(user)
+console.log(keys)
+
+// 2. The method Object.values() convert property's values of the user to an array.
+let values = Object.values(user)
+console.log(values)
+
+// 3. The method Object.entries() convert the enomerable string-keyed properties of an object to an array.
+let entries = Object.entries(user)
+console.log(entries)
