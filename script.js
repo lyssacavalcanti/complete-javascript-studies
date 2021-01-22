@@ -475,3 +475,20 @@ console.log(values)
 // 3. The method Object.entries() convert the enomerable string-keyed properties of an object to an array.
 let entries = Object.entries(user)
 console.log(entries)
+
+/* Converting an Array in an Object
+At first, let's create an array:
+*/
+const arr = ['Vector', 'Robot', '6 months']
+
+/* The method Object.assign() copy the values of all enumerable own properties from one 
+or more source objects to a target object.
+*/
+
+const obj1 = Object.assign({}, arr);
+console.log(obj1);
+
+/* The Spread Operator useful and quick syntax for adding items to array, combining array or objects.
+*/
+const obj2 = { ...arr }
+console.log(obj2);
