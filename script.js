@@ -479,6 +479,7 @@ console.log(entries)
 /* Converting an Array in an Object
 At first, let's create an array:
 */
+
 const arr = ['Vector', 'Robot', '6 months']
 
 /* The method Object.assign() copy the values of all enumerable own properties from one 
@@ -488,7 +489,53 @@ or more source objects to a target object.
 const obj1 = Object.assign({}, arr);
 console.log(obj1);
 
-/* The Spread Operator useful and quick syntax for adding items to array, combining array or objects.
+/*
+    {0: "Vector", 1: "Robot", 2: "6 months"}
+    0: "Vector"
+    1: "Robot"
+    2: "6 months"
+    __proto__: Object 
 */
+
+/* The Spread Operator is useful and quick syntax for adding items to array, combining array or objects.
+*/
+
 const obj2 = { ...arr }
 console.log(obj2);
+
+/*
+    {0: "Vector", 1: "Robot", 2: "6 months"}
+    0: "Vector"
+    1: "Robot"
+    2: "6 months"
+    __proto__: Object
+*/
+
+/* Removing Item from array
+There is 3 methods to remove itens from array: 
+
+.shift Method
+.pop Method
+.splice Method
+
+*/
+// .shift removes the first element from array.
+const numbersToShift = [2, 5, 9, 14, 37, 41];
+numbersToShift.shift();
+console.log(numbersToShift);
+
+// .pop removes the last element from arrya.
+const numbersToPop = [2, 5, 9, 14, 37, 41];
+numbersToPop.pop();
+console.log(numbersToPop);
+
+// .splice Remove one or more elements from the array.
+// The first parameter indicates where the removal should start. 
+// The second indicates the number of values ​​to be removed.
+const numbersToSplice = [2, 5, 9, 14, 37, 41];
+numbersToSplice.splice(1,4);
+console.log(numbersToSplice);
+
+
+
+
