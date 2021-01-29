@@ -446,7 +446,7 @@ The space between + + serves to make the first string concatenation and the seco
 Mystery Unraveled! It is worth remembering that this puzzle can only be done in Javascript.
 */
 
-alert(('b' + 'a' + + 'a' + 'a').toLowerCase());
+//alert(('b' + 'a' + + 'a' + 'a').toLowerCase());
 
 
 /* Converting an Object in an Array
@@ -517,8 +517,8 @@ There is 3 methods to remove itens from array:
 .shift Method
 .pop Method
 .splice Method
-
 */
+
 // .shift removes the first element from array.
 const numbersToShift = [2, 5, 9, 14, 37, 41];
 numbersToShift.shift();
@@ -537,5 +537,75 @@ numbersToSplice.splice(1,4);
 console.log(numbersToSplice);
 
 
+/* 8 Useful Javascript String Methodes
+*/
 
+// 1. INDEXOF
+// The indexOf() Method returns the index of (the position of) the first ocurrence of a specified text in a string
 
+const str = 'I use CSS everyday.'
+str.indexOf('CSS');
+//6
+
+console.log(str.indexOf('CSS'));
+
+// 2. LENGTH
+// The length property returns the length of a string.
+
+str.length;
+// 19
+
+console.log(str.length);
+
+// 3. SLICE
+// slice() extracts a part of a string and returns the extracted part in a new string.
+
+str.slice(2, 5);
+// use
+
+console.log(str.slice(2, 5))
+
+// 4. REPLACE 
+// The replace() method replace a specific value with another value in a string
+
+str.replace('use', 'learn');
+// I learn CSS everyday.
+
+console.log(str.replace('use', 'learn'));
+
+// 5. UPPERCASE AND LOWERCASE
+// this method converts a string to uppercase or lowercase
+
+str.toUpperCase();
+// I USE CSS EVERYDAY.
+
+console.log(str.toUpperCase());
+
+str.toLowerCase();
+// i use css everyday.
+
+console.log(str.toLowerCase());
+
+// 6. TRIM 
+// The trim() method removes whitespace from both sides os a string.
+
+// const str = '       I use CSS everyday.    '
+str.trim();
+console.log(str.trim());
+
+// 7. CONCAT
+// concat() joins two or more strings. The concat() method can be used instead of the plus operator.
+
+const stri = 'I learned CSS everyday';
+stri.concat(' this year.'); // Add a white space in the begin of phrase.
+// I learned CSS everyday this year.
+
+console.log(stri.concat(' this year.'));
+
+// 8. SPLIT
+// A string can be converted on an array with the split() method.
+
+stri.split('');
+// ["I", "learned", "CSS", "everyday"]
+
+console.log(stri.split(' ')); // Add aa white space to split each word.
