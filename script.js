@@ -6,6 +6,7 @@
 
 // // Exemplos de var, const e let 
 
+
 //     var country = 'Brazil';
 //     const continent = 'South America';
 //     let population = 209500000;
@@ -586,7 +587,7 @@ str.toLowerCase();
 
 console.log(str.toLowerCase());
 
-// 6. TRIM 
+// 6. TRIM  
 // The trim() method removes whitespace from both sides os a string.
 
 // const str = '       I use CSS everyday.    '
@@ -609,3 +610,91 @@ stri.split('');
 // ["I", "learned", "CSS", "everyday"]
 
 console.log(stri.split(' ')); // Add aa white space to split each word.
+
+
+/*___________________________________________________________________
+Javascript Ternary Operator
+
+The conditional (ternary) operator is the only Javascript operator that takes operands.
+
+1. A condition followed by a question mark (?)
+
+2. Then an expression to execute if the condition is truthy followed by a colon (:)
+
+3. And finally the expression to execute if the condition is false
+*/
+
+//condição ? true : false
+
+/* 
+Note: Don't use this if you have nested if-else as this will make your code hard to read.
+
+This operator is frequently used as a shortcut for the if statement
+*/
+
+const num = 10
+const  divisible = (num % 2) === 0 ? 'Par': 'Ímpar'
+console.log(divisible);
+// Par
+
+// (num % 2) === 0 is a statment
+// if statement is true return 'even''
+// else return 'odd'
+
+
+/*Operador Javascript Ternário
+
+O operador condicional (ternário) é o único operador Javascript que aceita operandos.
+
+1. Uma condição seguida por um ponto de interrogação (?)
+
+2. Em seguida, uma expressão a ser executada se a condição for verdadeira seguida por dois pontos (:)
+
+3. E finalmente a expressão a ser executada se a condição for falsa
+
+Nota: Não use isso se você tiver aninhado if-else, pois isso tornará seu código difícil de ler.
+
+Este operador é freqüentemente usado como um atalho para a instrução if
+*/
+
+/* 
+
+3 WAYS TO EMPTY AN ARRAY
+
+.LENGTH
+We can set the length of the Javascript arrays to 0, and this will empty our array.
+This is a common way to empty arrays, but it is not the fastest.
+*/
+
+var frutasEx1 = ['Maçã','Banana', 'Melancia', 'Uva']
+frutasEx1.length = 0
+
+console.log(frutasEx1); // Expected result: []
+console.log(frutasEx1.length); // Expected result: 0
+
+/* NEW EMPTY ARRAY
+
+This is the fastest way to empty the array.
+This is perfect if you have no reference elsewhere to the original array.
+If you do, these references will not be updated and those locations will continue to use the old array.
+*/
+
+var frutasEx2 = ['Maçã','Banana', 'Melancia', 'Uva']
+frutasEx2.length = []
+
+console.log(frutasEx2); // Expected result: []
+console.log(frutasEx2.length); // Expected result: 0
+
+/*  ARRAY SPLICE METHOD
+
+This can be done using the .splice () method from the list of Javascript array methods. The .splice () method takes the index (from which the splice should start) and the number of items to be removed as parameters and joins the elements together.
+Almost as fast as assigning it to a new matrix.
+*/
+
+var frutasEx3 = ['Maçã','Banana', 'Melancia', 'Uva']
+frutasEx3.splice(0, frutasEx3.length)
+
+console.log(frutasEx3); // Expected result: [] pes
+console.log(frutasEx3.length); // Expected result: 0
+
+
